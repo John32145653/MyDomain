@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Explore Japan</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .translation {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="site-title">Explore Japan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-guides.html">Travel Guides</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="live-performances.html">Live Performances</a></li>
+                    <li><a href="food.html">Food & Drink</a></li>
+                    <li><a href="transport.html">Transportation</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="events">
+            <h2>Events and Festivals</h2>
+            <button onclick="toggleLanguage()">Switch to Japanese</button>
+            <p class="translation">日本のイベントと祭りについて知ってください。</p>
+
+            <div class="event">
+                <h3>Cherry Blossom Festival (Hanami)</h3>
+                <h3 class="translation">桜祭り（花見）</h3>
+                <img src="https://seeker.io/wp-content/uploads/2019/02/shutterstock_1179807547.jpg" alt="Cherry Blossom Festival" />
+                <p>Experience the beauty of cherry blossoms in full bloom during the Hanami season. This event typically takes place from late March to early April across various parks in Japan.</p>
+                <p class="translation">花見の季節に満開の桜の美しさを体験してください。このイベントは通常、3月下旬から4月上旬にかけて日本各地の公園で行われます。</p>
+            </div>
+
+            <div class="event">
+                <h3>Gion Matsuri</h3>
+                <h3 class="translation">祇園祭</h3>
+                <img src="https://i.pinimg.com/originals/4d/16/0b/4d160b8bf12080c46ec4819982676943.jpg" alt="Gion Matsuri" />
+                <p>Held in Kyoto throughout July, Gion Matsuri is one of Japan's most famous festivals, featuring parades of beautifully decorated floats and traditional performances.</p>
+                <p class="translation">京都で7月中に行われる祇園祭は、日本で最も有名な祭りの一つで、美しく装飾された山車のパレードと伝統的なパフォーマンスが特徴です。</p>
+            </div>
+
+            <div class="event">
+                <h3>Sapporo Snow Festival</h3>
+                <h3 class="translation">札幌雪まつり</h3>
+                <img src="https://media.cntraveler.com/photos/54cfd05ac335146e49865413/master/pass/sapporo-snow-festival-1536.jpg" alt="Sapporo Snow Festival" />
+                <p>Every February, the Sapporo Snow Festival showcases stunning ice sculptures and snow art. Visitors can enjoy food stalls and winter sports activities.</p>
+                <p class="translation">毎年2月に札幌雪まつりが開催され、素晴らしい氷の彫刻や雪のアートが展示されます。訪問者は屋台や冬のスポーツアクティビティを楽しむことができます。</p>
+            </div>
+
+            <div class="event">
+                <h3>Oktoberfest in Tokyo</h3>
+                <h3 class="translation">東京オクトーバーフェスト</h3>
+                <img src="https://www.gotokyo.org/en/spot/ev220/images/main.jpg" alt="Oktoberfest in Tokyo" />
+                <p>Enjoy a taste of Germany in Tokyo during this beer festival, typically held in late September to early October, featuring German food, music, and plenty of beer.</p>
+                <p class="translation">このビール祭りでは、通常9月下旬から10月上旬にかけて東京でドイツの味を楽しむことができます。ドイツの食べ物や音楽、たくさんのビールが楽しめます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore Japan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleLanguage() {
+            const translationElements = document.querySelectorAll('.translation');
+            const button = document.querySelector('button');
+
+            translationElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+
+            button.textContent = button.textContent === 'Switch to Japanese' ? 'Switch to English' : 'Switch to Japanese';
+        }
+    </script>
+</body>
+</html>
+

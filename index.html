@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions - Explore Japan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="site-title">Explore Japan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-guides.html">Travel Guides</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="live-performances.html">Live Performances</a></li>
+                    <li><a href="food.html">Food & Drink</a></li>
+                    <li><a href="transport.html">Transportation</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <button onclick="changeLanguage('en')">English</button>
+                <button onclick="changeLanguage('ja')">日本語</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="attractions">
+            <h2>
+                <span data-lang="en">Top Attractions in Japan</span>
+                <span data-lang="ja" style="display:none;">日本のトップ観光名所</span>
+            </h2>
+            <p>
+                <span data-lang="en">Explore famous sites like Mount Fuji and Kyoto's temples, each offering unique experiences and breathtaking views. Discover the beauty of traditional Japanese architecture and the serenity of nature that Japan has to offer.</span>
+                <span data-lang="ja" style="display:none;">富士山や京都の寺院などの有名な場所を探索してください。日本が提供する独特の体験と息を呑むような景色をお楽しみください。日本の伝統的な建築の美しさや自然の静けさを発見してください。</span>
+            </p>
+
+            <div class="attraction">
+                <h3 data-lang="en">Mount Fuji</h3>
+                <h3 data-lang="ja" style="display:none;">富士山</h3>
+                <img src="https://www.tripsavvy.com/thmb/qFqPcg6Wo24Hu4fLokNfAZdC-xQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/fuji-mountain-in-autumn-822273028-5a6a8a9c3418c600363958d3.jpg" alt="Mount Fuji" />
+                <p>
+                    <span data-lang="en">Mount Fuji, an iconic symbol of Japan, stands at 3,776 meters and is a must-see for any traveler. Enjoy hiking, photography, and stunning views from the surrounding lakes.</span>
+                    <span data-lang="ja" style="display:none;">富士山は日本の象徴的なシンボルであり、3,776メートルの高さを誇ります。ハイキングや写真撮影、周囲の湖からの素晴らしい景色を楽しんでください。</span>
+                </p>
+            </div>
+
+            <div class="attraction">
+                <h3 data-lang="en">Kyoto's Temples</h3>
+                <h3 data-lang="ja" style="display:none;">京都の寺院</h3>
+                <img src="https://thecreativeadventurer.com/wp-content/uploads/2020/01/DiscoveringtheSecretsofKiyomizu-deraTemple2CAGuidetoKyoto6-1024x707.jpg" alt="Kyoto Temples" />
+                <p>
+                    <span data-lang="en">Kyoto is home to numerous temples, each with its own history and beauty. Don't miss the golden Kinkaku-ji and the serene Ryoan-ji rock garden.</span>
+                    <span data-lang="ja" style="display:none;">京都には多くの寺院があり、それぞれに歴史と美しさがあります。金閣寺や静かな龍安寺の石庭をお見逃しなく。</span>
+                </p>
+            </div>
+            <!-- Add more attractions as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore Japan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

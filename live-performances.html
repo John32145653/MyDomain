@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Performances - Explore Japan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="site-title">Explore Japan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="attractions.html">Attractions</a></li>
+                    <li><a href="travel-guides.html">Travel Guides</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="live-performances.html">Live Performances</a></li>
+                    <li><a href="food.html">Food & Drink</a></li>
+                    <li><a href="transport.html">Transportation</a></li>
+                    <li><a href="tips.html">Travel Tips</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="live-performances">
+            <h2>Live Performances</h2>
+            <p>Experience the best of Japanese music with live performances from renowned artists!</p>
+            <input type="text" id="search-input" placeholder="Search for an artist..." onkeyup="searchArtists()">
+            <ul id="artist-list">
+                <li><strong>Plastic Tree:</strong> Upcoming Concert on <strong>November 16, 2024</strong> at <strong>EX THEATER ROPPONGI, MINATO-KU, TOKYO, JP</strong></li>
+                <li><strong>KANA-BOON</strong> Upcoming Concert on <strong>November 21, 2024</strong> at <strong>Fukuoka BEAT STATION
+4-11-4 Watanabe-dori, Chuo-ku
+Fukuoka, Japan</strong></li>
+                <li><strong>LISA:</strong> Upcoming Concert on <strong>November 16, 2024</strong> at <strong>Miyagi Sekisui Heim Super Arena (Grandy 21), Miyagi, JP</strong></li>
+                <li><strong>Miwa:</strong> Upcoming Concert on <strong>November 5,2024</strong> at <strong>T・Joy Hakata, Fukuoka-shi, Hakata-ku, Fukuoka, JP</strong></li>
+                <li><strong>Little Glee Monster:</strong> Upcoming Concert on <strong>November 23, 2024</strong> at <strong>Toyota Stadium</strong></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Explore Japan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchArtists() {
+            const input = document.getElementById('search-input').value.toLowerCase();
+            const artistList = document.getElementById('artist-list');
+            const artists = artistList.getElementsByTagName('li');
+
+            for (let i = 0; i < artists.length; i++) {
+                const artist = artists[i].innerText.toLowerCase();
+                if (artist.includes(input)) {
+                    artists[i].style.display = "";
+                } else {
+                    artists[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
